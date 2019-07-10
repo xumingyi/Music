@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.duan.musicoco.detail.sheet.SheetDetailActivity"
+    tools:showIn="@layout/activity_sheet_detail">
+
+    <LinearLayout
+        android:id="@+id/sheet_detail_song_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sheet_detail_random_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_default_margin"
+            android:paddingRight="@dimen/activity_default_margin">
+
+            <RelativeLayout
+                android:id="@+id/sheet_detail_check_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/sheet_detail_check_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/sheet_detail_check_all_"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/sheet_detail_check_all_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toLeftOf="@+id/sheet_detail_check_count"
+                    android:gravity="center"
+                    android:text="@string/all"
+                    android:textSize="@dimen/text_small_s_s" />
+
+                <TextView
+                    android:id="@+id/sheet_detail_check_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_default_margin"
+                    android:layout_marginRight="@dimen/activity_default_margin"
+                    android:layout_toRightOf="@id/sheet_detail_check_all"
+                    android:gravity="center"
+                    android:text="@string/select_song"
+                    android:textSize="@dimen/text_middle" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/sheet_detail_songs_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/ic_action_playback_schuffle" />
+
+            <TextView
+                android:id="@+id/sheet_detail_songs_play_random"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/activity_default_margin"
+                android:gravity="center_vertical|start"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/sheet_detail_songs_sort_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/song_detail_sort_tip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/activity_default_margin"
+                android:gravity="center_vertical|start"
+                android:visibility="invisible"
+                android:lines="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sheet_detail_songs_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/activity_default_margin"
+            android:layout_marginRight="@dimen/activity_default_margin"
+            android:background="#000" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sheet_detail_songs_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

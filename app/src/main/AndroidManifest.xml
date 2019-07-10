@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.duan.musicoco">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="com.duan.musicoco.permission.ACCESS_PLAY_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 屏幕常亮 -->
+
+    <!-- 小米统计服务权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 小米流量变现服务-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.duan.musicoco.permission.ACCESS_PLAY_SERVICE"
+        android:protectionLevel="normal" />
+
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true">
+
+        <!--小米统计服务 value为数值 metaData.getString() 返回 null ，加个 * 使为字符串，解析时丢弃 *-->
+        <meta-data
+            android:name="XIAOMI_APPID"
+            android:value="2882303761517612812*" />
+        <meta-data
+            android:name="XIAOMI_APPKEY"
+            android:value="5641761220812*" />
+
+        <!-- 小米流量变现服务Activity-->
+        <activity
+            android:name="com.xiaomi.ad.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <activity android:name=".app.RootActivity" />
+
+        <!-- 需要为 PlayActivity 开启硬件加速，Android 4.1 以上默认开启 -->
+        <activity
+            android:name=".play.PlayActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" /> <!-- singleInstance 不受栈管理 -->
+
+        <service
+            android:name=".service.PlayService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.duan.musicoco.permission.ACCESS_PLAY_SERVICE"
+            android:process=":playService">
+            <intent-filter>
+                <action android:name="com.duan.musicoco.action.PLAY_SERVICE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".app.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/label_main"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".detail.song.SongDetailActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Song.Detail" />
+        <activity
+            android:name=".detail.sheet.SheetDetailActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Sheet.Detail" />
+        <activity
+            android:name=".sheetmodify.SheetModifyActivity"
+            android:label="@string/label_modify_sheet"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".search.SearchActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity
+            android:name=".rmp.RecentMostPlayActivity"
+            android:label="@string/rmp_history"
+            android:launchMode="singleTask"
+            android:parentActivityName=".app.RootActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.duan.musicoco.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".main.leftnav.themecolor.ThemeColorCustomActivity"
+            android:label="@string/label_theme_color_custom"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".main.leftnav.imagewall.ImageWallActivity"
+            android:label="@string/label_image_wall"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".main.leftnav.timesleep.TimeSleepActivity"
+            android:label="@string/label_time_sleep"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".main.leftnav.play.PlayThemeCustomActivity"
+            android:label="@string/label_play_theme_custom"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:label="@string/label_setting"
+            android:theme="@style/AppTheme.Setting" />
+        <activity
+            android:name=".app.FeedBackActivity"
+            android:label="@string/label_feed_back"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".app.AboutActivity"
+            android:label="@string/label_about"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".app.WebActivity"
+            android:label="@string/label_web"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".app.MeActivity"
+            android:label="@string/label_me"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name=".service.HeadphoneWireControlReceiver">
+            <intent-filter android:priority="2000">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

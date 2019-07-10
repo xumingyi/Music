@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_default_margin_s_s_s"
+    android:layout_marginRight="@dimen/activity_default_margin_s_s_s"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sheet_all_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_default_margin_s_s_s"
+        android:layout_marginLeft="@dimen/activity_default_margin"
+        android:layout_marginRight="@dimen/activity_default_margin_half"
+        android:layout_marginTop="@dimen/activity_default_margin_s"
+        android:layout_weight="0.5"
+        app:cardCornerRadius="2dp"
+
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sheet_all_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_sheets_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_album" />
+
+            <TextView
+                android:id="@+id/sheet_all_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+
+                android:gravity="center"
+                android:lines="1"
+                android:padding="4dp"
+                android:text="@string/main_sheet_all"
+                android:textSize="@dimen/text_middle_s_s"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sheet_all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxEms="3"
+            android:minWidth="20dp"
+            android:padding="4dp"
+            android:text="0"
+            android:textSize="@dimen/text_small_s"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sheet_recent_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_default_margin_s_s_s"
+        android:layout_marginTop="@dimen/activity_default_margin_s"
+        android:layout_weight="0.5"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sheet_recent_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_sheets_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_album" />
+
+            <TextView
+                android:id="@+id/sheet_recent_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+
+                android:padding="4dp"
+                android:text="@string/main_sheet_recent"
+                android:textSize="@dimen/text_middle_s_s"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sheet_recent_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:lines="1"
+            android:maxEms="3"
+            android:minWidth="20dp"
+            android:padding="4dp"
+            android:text="0"
+            android:textSize="@dimen/text_small_s"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sheet_favorite_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_default_margin_s_s_s"
+        android:layout_marginLeft="@dimen/activity_default_margin_half"
+        android:layout_marginRight="@dimen/activity_default_margin"
+        android:layout_marginTop="@dimen/activity_default_margin_s"
+        android:layout_weight="0.5"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sheet_favorite_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_sheets_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_album" />
+
+            <TextView
+                android:id="@+id/sheet_favorite_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:lines="1"
+                android:padding="4dp"
+                android:text="@string/main_sheet_favorite"
+                android:textSize="@dimen/text_middle_s_s"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sheet_favorite_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="3dp"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:lines="1"
+            android:maxEms="3"
+            android:minWidth="20dp"
+            android:padding="4dp"
+            android:text="0"
+            android:textSize="@dimen/text_small_s"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

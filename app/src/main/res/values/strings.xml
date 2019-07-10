@@ -1,0 +1,314 @@
+<resources>
+    <string name="app_name">我的音乐</string>
+    <string name="app_name_us">Musicoco</string>
+
+    <string name="album_save_path">image</string>
+    <string name="qq">2217611834</string>
+    <string name="phone">18328083078</string>
+    <string name="email">aimeimeits@gmail.com</string>
+
+    <string name="default_sheet">我的歌单</string>
+    <string name="default_sheet_des">收藏喜欢的歌曲</string>
+
+    <string name="guide_url">http://www.jianshu.com/p/051e214ebc2e</string>
+    <string name="guide_star">http://app.mi.com/details?id=com.duan.musicoco</string>
+    <string name="share_to_friends">点击链接从小米商店下载 Musicoco：http://app.mi.com/details?id=com.duan.musicoco</string>
+
+    <string name="label_theme_color_custom">主题色定制</string>
+    <string name="label_modify_sheet">编辑歌单</string>
+    <string name="label_image_wall">图片墙</string>
+    <string name="label_time_sleep">定时停止播放</string>
+    <string name="label_play_theme_custom">播放界面风格</string>
+    <string name="label_setting">设置</string>
+    <string name="label_feed_back">反馈</string>
+    <string name="label_about">关于</string>
+    <string name="label_web">网页</string>
+    <string name="label_me">关于我</string>
+    <string name="label_main">我的音乐</string>
+
+    <!-- 权限相关 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="permission_required">应用需要这些权限以读取设备上的歌曲文件，否则程序将无法正常工作！</string>
+    <string name="permission_media_read">媒体文件读取权限</string>
+
+    <!-- 播放模式 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="play_mode_list_loop">列表循环</string>
+    <string name="play_mode_single_loop">单曲循环</string>
+    <string name="play_mode_random">随机播放</string>
+
+    <!-- 主页左侧导航 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">设置</string>
+
+    <!-- 主页 主歌单歌单名/////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="main_sheet_favorite">我的收藏</string>
+    <string name="main_sheet_recent">最近播放</string>
+    <string name="main_sheet_all">全部歌曲</string>
+
+    <!-- 主页 我的歌单/////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="my_sheet_title">创建的歌单</string>
+    <string name="my_sheet_click_here_for_new_sheet">点击这里创建歌单</string>
+
+    <!-- 歌曲操作 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="song_operation_collection_sheet">添加至播放列表</string>
+    <string name="song_operation_detail">歌曲详情</string>
+    <string name="song_operation_remove_from_sheet">从歌单中移除</string>
+    <string name="song_operation_delete">删除</string>
+    <string name="song_operation_add_to_favorite">收藏</string>
+    <string name="song_operation_remove_from_favorite">取消收藏</string>
+
+    <!-- 歌单编辑/新建 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="new_sheet">新建歌单</string>
+    <string name="sheet_name">歌单名</string>
+    <string name="sheet_remark">描述</string>
+    <string name="sheet_input_tip">输入歌单名和描述，描述可以为空</string>
+
+    <string name="sheet_operation_modify">编辑歌单信息</string>
+    <string name="sheet_operation_delete">删除歌单</string>
+
+    <string name="modify_sheet">编辑歌单</string>
+
+    <!-- 操作失败/错误 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="error_song_is_already_in_sheet">歌曲已在歌单中 :(</string>
+    <string name="error_text_count_out_of_limit">字数超出限制啦 :(</string>
+    <string name="error_name_required">名称不能为空 :(</string>
+    <string name="error_sheet_already_exits">歌单已存在 :(</string>
+    <string name="error_delete_file_fail">文件删除失败 :(</string>
+    <string name="error_no_album_image">没有专辑图片 :(</string>
+    <string name="error_empty_sheet">歌单是空的 :(</string>
+    <string name="error_non_sheet_existent">歌单不存在 :(</string>
+    <string name="error_non_song_to_play">没有歌曲可以播放 :(</string>
+    <string name="error_non_song_select">还没有选择任何歌曲 :(</string>
+    <string name="error_delete_sheet_fail">删除歌单失败 :(</string>
+    <string name="error_load_sheet_fail">加载歌单失败 :(</string>
+    <string name="error_action_did_not_support">不支持该操作 :(</string>
+    <string name="error_time_sleep_time_must_more_then_zero">时间必须大于0 :(</string>
+    <string name="error_save_fail">保存失败 :(</string>
+    <string name="error_too_many_words_for_300">字数不能超过 300  :(</string>
+    <string name="error_check_qq_install">请检查是否安装QQ :(</string>
+
+    <!-- 操作成功 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="success_create_sheet">创建歌单 :)</string>
+    <string name="success_modify_sheet">歌单信息已修改 :)</string>
+    <string name="success_add_to_sheet">成功添加到歌单 :)</string>
+    <string name="success_delete_file">成功删除文件 :)</string>
+    <string name="success_delete_sheet">成功删除歌单 :)</string>
+    <string name="success_remove_song_from_sheet">成功移除歌曲 :)</string>
+    <string name="success_add_all_song_to_favorite">已成功收藏全部 :)</string>
+    <string name="success_add_select_song_to_favorite">成功收藏选中歌曲 :)</string>
+    <string name="success_remove_select_song_from_favorite">选中歌曲已取消收藏 :)</string>
+    <string name="success_set">设置成功 :)</string>
+    <string name="success_modify_saved">设置保存成功 :)</string>
+    <string name="success_saved">保存成功 :)</string>
+    <string name="success_save_image_to">图片成功保存到: </string>
+    <string name="success_clear_cache">缓存已清除 :)</string>
+    <string name="success_feedback">短信已发送，我会认真参考你的意见和建议，谢谢反馈 :)</string>
+
+    <!-- 公用短词 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="warning">警告</string>
+    <string name="unknown">出错了 :O</string>
+    <string name="save">保存</string>
+    <string name="favorite">收藏</string>
+    <string name="tip">提示</string>
+    <string name="all">全部</string>
+    <string name="play">播放</string>
+    <string name="count">次</string>
+    <string name="head">首</string>
+    <string name="search">搜索</string>
+    <string name="continue_">继续</string>
+    <string name="deleting">正在删除</string>
+    <string name="cancel">取消</string>
+    <string name="arts">艺术家</string>
+    <string name="album">专辑</string>
+    <string name="remove">移除</string>
+    <string name="delete">删除</string>
+    <string name="new_">新建</string>
+    <string name="song">歌曲</string>
+    <string name="sheet">歌单</string>
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="custom">自定义</string>
+    <string name="detail">详情</string>
+    <string name="send">发送</string>
+    <string name="share">分享</string>
+
+    <string name="multi_select">多选</string>
+    <string name="sort">排序</string>
+
+    <string name="cancel_favorite">取消收藏</string>
+    <string name="select_operation">选择操作</string>
+    <string name="select_song">选择歌曲</string>
+    <string name="create_time">创建时间</string>
+
+    <string name="action_status_bar_color">标题栏颜色</string>
+    <string name="icon_color">图标颜色</string>
+    <string name="open_whit_browser">在系统浏览器中打开</string>
+
+    <string name="enable">开启</string>
+    <string name="disable">不开启</string>
+
+    <!-- 提示 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="info_add_all_songs_to_favorite">将所有歌曲加入[我的收藏]</string>
+    <string name="info_add_select_songs_to_favorite">将选中歌曲加入[我的收藏]</string>
+    <string name="info_remove_select_songs_from_favorite">将选中歌曲从[我的收藏]移除</string>
+    <string name="info_remove_select_songs_from_sheet">从歌单中移除选中歌曲</string>
+    <string name="info_delete_confirm">确认删除，删除后将无法恢复！</string>
+    <string name="info_delete_select_confirm">确认删除选中歌曲，删除后将无法恢复！</string>
+    <string name="info_not_modify">未修改</string>
+    <string name="info_app_wile_quit_after_20s">Musicoco 将在 20 秒后退出</string>
+    <string name="info_search">搜索音乐</string>
+    <string name="info_show_in_sheet">在歌单中显示</string>
+    <string name="info_time_sleep_is_canceled">定时停止播放已取消</string>
+    <string name="info_save_image">保存图片</string>
+    <string name="info_choice_email_app">请选择邮件类应用</string>
+    <string name="info_cleat_cache">
+        清除缓存将清空歌单详情界面和播放界面的图片缓存，这会使应用在将来再次用到这些图片时需要重新生成，确认清除！
+    </string>
+    <string name="info_will_speed_few_cent">
+        点击发送以短信的方式向我反馈\n这可能需要你支付少许短信费用！
+    </string>
+    <string name="info_contact_me_other_where">也可以通过以下方式联系我</string>
+    <string name="info_contact_me_other_where_detail">
+        电话：18328083078 \n邮箱：aimeimeits@gmail.com \nQQ：2217611834 \n
+    </string>
+    <string name="info_feedback_input_hint">输入意见或建议</string>
+    <string name="info_feedback_input_empty">你还没有输入内容哦</string>
+    <string name="info_empty_library_when_start">
+        应用目前只支持本地音乐播放，您的设备上没有音乐文件，应用将无法为您提供服务，抱歉！
+    </string>
+
+    <!-- 正在处理 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="in_progress_add_songs_to_favorite">正在收藏歌曲</string>
+    <string name="in_progress_remove_songs_from_favorite">正在取消收藏</string>
+    <string name="in_progress_remove_songs_from_sheet">正在移除</string>
+    <string name="in_progress_delete">正在删除</string>
+    <string name="in_progress">加载中...</string>
+    <string name="in_progress_send_feedback">正在发送短信</string>
+
+    <!-- 替换 * 号/////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="replace_play_all_song_random">随机播放 * 首歌曲</string>
+    <string name="replace_search_from_songs">从 * 首歌曲中检索</string>
+    <string name="replace_search_result_prompt">共检索到 * 首歌曲</string>
+    <string name="replace_rmp_title">播放次数最多的 * 首歌</string>
+    <string name="replace_time_sleep">* 分钟后停止播放</string>
+    <string name="replace_time_sleep_app_quit_at">Musicoco 将于 * 后关闭</string>
+    <string name="replace_add_songs_to">添加 * 首歌曲到</string>
+
+    <!-- 对话框等标题 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="title_about_image">关于图片</string>
+    <string name="title_add_all_songs_to_favorite">收藏所有歌曲</string>
+    <string name="title_add_to_sheet">添加至播放列表</string>
+    <string name="title_add_to_favorite">添加至收藏</string>
+
+    <!-- 主页 最近最多播放 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="rmp_see_more">查看更多</string>
+    <string name="rmp_history">历史最多播放</string>
+
+    <!-- 主页左侧导航及设置 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="setting_tools">工具</string>
+    <string name="setting_scan">歌曲扫描</string>
+    <string name="setting_time_sleep">定时停止播放</string>
+    <string name="setting_image_wall">图片墙</string>
+    <string name="setting_equalizer">均衡器</string> <!-- 升级 -->
+
+    <string name="setting_theme_custom">外观定制</string>
+    <string name="setting_play_ui_choice">播放界面风格</string>
+    <string name="setting_theme_color_custom">主题色定制</string>
+    <string name="setting_night_mode">夜间模式</string>
+    <string name="setting_daytime_mode">白天模式</string>
+
+    <string name="setting_user_guide">用户指南</string>
+    <string name="setting_quit">退出</string>
+    <string name="setting_set">设置</string>
+
+    <!-- /////////////////////////////////////////////-->
+    <string name="setting_set_open_auto_play">打开应用自动播放</string>
+    <string name="setting_set_memory_play">记忆播放</string>
+    <string name="memory_play_enable">22:30 - 07:00 自动开启夜间模式</string>
+    <string name="setting_set_switch_theme_mode_auto">自动切换至夜间模式</string>
+
+    <string name="setting_music_hardware">音乐硬件</string>
+    <string name="setting_set_headphone_wire">线控切歌</string>
+    <string name="setting_set_headphone_wire_enable">单击：播放/暂停；双击：下一首；三击：上一首</string>
+
+    <string name="setting_visual_control">视效控制</string>
+    <string name="setting_dot_wave">播放面板视觉效果(beta)</string>
+
+    <string name="setting_set_feedback">反馈</string>
+    <string name="setting_set_about">应用信息</string>
+
+    <string name="setting_set_image_clear_cache">清除缓存</string>
+
+    <!--更新-->
+    <string name="setting_set_image_save_path">图片保存目录</string>
+
+    <!-- 播放界面主题自定义 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="play_theme_custom_dark">夜间</string>
+    <string name="play_theme_custom_white">白天</string>
+    <string name="play_theme_custom_blur">虚化</string>
+    <string name="play_theme_custom_color">纯色</string>
+    <string name="play_theme_custom_gradient">渐变</string>
+    <string name="play_theme_custom_mask">遮罩</string>
+
+    <!-- 关于 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="about_guide">用户指南</string>
+    <!--更新-->
+    <string name="about_welcome">欢迎页</string>
+    <string name="about_star">给应用评分</string>
+    <string name="about_share">推荐给朋友</string>
+    <string name="about_me">关于开发者</string>
+
+    <!-- 关于我 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="me_social">社交账号</string>
+    <string name="me_open_source">项目开源地址</string>
+    <string name="me_open_source_url">地址：https://github.com/DuanJiaNing/Musicoco</string>
+
+    <string name="me_github">GitHub</string>
+    <string name="me_github_url">https://github.com/DuanJiaNing</string>
+    <string name="me_csdn">CSDN</string>
+    <string name="me_csdn_url">http://blog.csdn.net/aimeimeits?viewmode=list</string>
+    <string name="me_jianshu">简书</string>
+    <string name="me_jianshu_url">http://www.jianshu.com/u/897bb1600def</string>
+    <string name="me_qq">QQ</string>
+    <string name="me_qq_url">@string/qq</string>
+    <string name="me_email">邮箱</string>
+    <string name="me_email_url">@string/email</string>
+    <string name="me_phone">电话</string>
+    <string name="me_phone_url">@string/phone</string>
+
+    <!-- 歌曲详情 /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <string name="song_detail_duration">时长</string>
+    <string name="song_detail_album">所属专辑</string>
+    <string name="song_detail_year">年份</string>
+    <string name="song_detail_path">文件路径</string>
+    <string name="song_detail_size">大小</string>
+    <string name="song_detail_add_time">添加时间</string>
+    <string name="song_detail_mimeType">格式</string>
+    <string name="song_detail_play_times">播放次数</string>
+    <string name="song_detail_last_play">最后播放时间</string>
+    <string name="song_detail_favorite">收藏</string>
+    <string name="song_detail_not_favorite">未收藏</string>
+    <string name="song_detail_song_list">已加入歌单</string>
+    <string name="song_detail_sort_tip">长按歌曲进行拖拽</string>
+
+</resources>

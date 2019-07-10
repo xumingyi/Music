@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="pre_container">
+
+    <PreferenceCategory android:title="@string/setting_tools">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pre_auto_play"
+            android:summaryOff="@string/disable"
+            android:summaryOn="@string/enable"
+            android:title="@string/setting_set_open_auto_play" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pre_memory_play"
+            android:summaryOff="@string/disable"
+            android:summaryOn="@string/enable"
+            android:title="@string/setting_set_memory_play" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pre_auto_switch_night_theme"
+            android:summaryOff="@string/disable"
+            android:summaryOn="@string/memory_play_enable"
+            android:title="@string/setting_set_switch_theme_mode_auto" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_music_hardware">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pre_headphone_wire"
+            android:summaryOff="@string/disable"
+            android:summaryOn="@string/setting_set_headphone_wire_enable"
+            android:title="@string/setting_set_headphone_wire" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_visual_control">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="visual_control_dot_wave"
+            android:summaryOff="@string/disable"
+            android:summaryOn="@string/enable"
+            android:title="@string/setting_dot_wave" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

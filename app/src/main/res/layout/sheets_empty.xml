@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:padding="8dp"
+        android:background="?android:selectableItemBackground"
+        android:layout_marginTop="@dimen/activity_default_margin_2x"
+        android:layout_marginBottom="@dimen/activity_default_margin_2x"
+        android:id="@+id/sheet_empty_add"
+        android:clickable="true"
+        android:drawablePadding="3dp"
+        android:drawableBottom="@drawable/line"
+        android:drawableTop="@drawable/ic_action_add"
+        android:textSize="@dimen/text_middle_s"
+        android:text="@string/my_sheet_click_here_for_new_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
